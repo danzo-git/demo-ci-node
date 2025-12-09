@@ -23,3 +23,6 @@ jobs:
 
       - name: Push image to Docker Hub
         run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/demo-ci-node:latest
+      
+      - name: Debug secrets
+        run: echo "USER=${{ secrets.DOCKERHUB_USERNAME }}"
