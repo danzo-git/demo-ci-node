@@ -35,6 +35,6 @@ jobs:
           username: debian
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            cd /home/deployer/app
+            cd /home/debian/deployer
             docker-compose pull
             docker-compose up -d
