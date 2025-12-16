@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  app:
+    image: danzodocker/demo-ci-node:latest
+    container_name: demo-ci-node
+    ports:
+      - "3000:3000"
+    restart: always
